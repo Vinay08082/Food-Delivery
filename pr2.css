@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+  margin: 3px 4px;
+}
+#logo img{
+    height: 49px;
+  margin: 3px 4px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.32rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 33px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* homesection */
+#Home{
+    display: flex;
+    flex-direction: column;
+    height: 690px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+#Home::before{
+    content: "";
+    background: url(img1.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#Home h1{
+    color: white;
+    text-align: center;
+    /* font-size: 2.8rem; */
+
+}
+#Home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 23px;
+    background-color: rgb(152, 152, 213);
+}
+#services img{
+    height: 120px;
+    margin: auto;
+    display: block;
+}
+/* client section */
+#client-container{
+    height: 340px;
+}
+#client-container::before{
+    content: "";
+    position: absolute;
+    background: url(img1.jpg);
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 150px;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 68px;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font: italic;
+}
+.btn{
+    padding: 7px;
+    border: 2px solid red;
+    background-color: rgb(rgb(64, 61, 61), rgb(194, 236, 194), rgb(165, 165, 234));
+    color: brown;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
